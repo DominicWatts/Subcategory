@@ -3,7 +3,7 @@
     "description": "Subcategory layout to view subcategory thumnails",
     "type": "magento2-module",
     "license": "GPL-3.0",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "authors": [
         {
             "name": "Dominic Xigen",

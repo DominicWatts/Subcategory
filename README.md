@@ -20,7 +20,11 @@ Generic Subcategory view loaded via extension - not theme - therefore universal 
 
 Under category configure `Subcategory` layout
 
-![Screenshot](https://i.snipboard.io/T1wxyH.jpg) 
+![Screenshot](https://i.snipboard.io/T1wxyH.jpg)
+
+Under subcategory add image
+
+![Screenshot](https://i.snipboard.io/ecT1wY.jpg) 
 
 Generic frontend template
 
