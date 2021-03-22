@@ -28,18 +28,18 @@ $mode = 'grid';
                     ?>
                     <?= /* @escapeNotVerified */ ($iterator++ == 1) ? '<li class="product-item">' : '</li><li class="product-item">' ?>
                         <div class="product-item-info">
-                            <a href="<?= /* @noEscape */ $block->escapeUrl($subcategory->getUrl()) ?>" 
-                               title="<?= /* @noEscape */ $block->escapeHtmlAttr($subcategory->getName()) ?>" 
+                            <a href="<?= $block->escapeUrl($subcategory->getUrl()) ?>" 
+                               title="<?= $block->escapeHtmlAttr($subcategory->getName()) ?>" 
                                class="product-item-photo">
                                 <?= /* @noEscape */ $_imgHtml ?>
                             </a> 
                         </div>
                         <div class="product-item-details">
                             <strong class="product-item-name">
-                                <a href="<?= /* @noEscape */ $block->escapeUrl($subcategory->getUrl()) ?>" 
-                                   title="<?= /* @noEscape */ $block->escapeHtmlAttr($subcategory->getName()) ?>"
+                                <a href="<?= $block->escapeUrl($subcategory->getUrl()) ?>" 
+                                   title="<?= $block->escapeHtmlAttr($subcategory->getName()) ?>"
                                    class="product-item-link">
-                                    <?= /* @noEscape */ $block->escapeHtml($subcategory->getName()) ?>
+                                    <?= $block->escapeHtml($subcategory->getName()) ?>
                                 </a>
                             </strong>
                             <br/>                       
