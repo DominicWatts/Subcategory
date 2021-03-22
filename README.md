@@ -1,5 +1,11 @@
 # Xigen Subcategory view
 
+![phpcs](https://github.com/DominicWatts/Subcategory/workflows/phpcs/badge.svg)
+
+![PHPCompatibility](https://github.com/DominicWatts/Subcategory/workflows/PHPCompatibility/badge.svg)
+
+![PHPStan](https://github.com/DominicWatts/Subcategory/workflows/PHPStan/badge.svg)
+
 Generic Subcategory view loaded via extension - not theme - therefore universal to use on multiple projects.
 
 # Install instructions
