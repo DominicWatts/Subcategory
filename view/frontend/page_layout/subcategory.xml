@@ -5,7 +5,7 @@
         <referenceContainer name="main" htmlClass="contents-main">
             <block class="Magento\Framework\View\Element\Template" 
                    name="subcategory.list" 
-                   template="Xigen_Subcategory::category/top-level-category.phtml" />
+                   template="Xigen_Subcategory::category/subcategory.phtml" />
         </referenceContainer>
     </referenceContainer>
     <referenceContainer name="content" remove="true" />
