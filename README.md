@@ -18,9 +18,9 @@ Generic Subcategory view loaded via extension - not theme - therefore universal 
 
 # Usage instructions
 
-Under category configure subcategory layout
+Under category configure `Subcategory` layout
 
-![Screenshot](https://i.snipboard.io/itqeTa.jpg) 
+![Screenshot](https://i.snipboard.io/T1wxyH.jpg) 
 
 Generic frontend template
 
