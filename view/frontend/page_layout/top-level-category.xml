@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
+    <update handle="2columns-left"/>
+    <referenceContainer name="columns" htmlClass="row">
+        <referenceContainer name="main" htmlClass="contents-main">
+            <block class="Magento\Framework\View\Element\Template" 
+                   name="subcategory.list" 
+                   template="Xigen_Subcategory::category/top-level-category.phtml" />
+        </referenceContainer>
+    </referenceContainer>
+    <referenceContainer name="content" remove="true" />
+</layout>

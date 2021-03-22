@@ -1,0 +1,58 @@
+<?php
+/**
+ * @author Dominic <dominic@xigen.co.uk>
+ */
+
+$_categoryHelper = $this->helper(\Xigen\Subcategory\Helper\Category::class);
+$_outputHelper = $this->helper(\Magento\Catalog\Helper\Output::class);
+$subcategories = $_categoryHelper->getChildrenCategories();
+$type = 'widget-special-grid';
+$mode = 'grid';
+?>
+
+<div class="block widget block-subcategory-list">
+    <div class="block-content">
+        <div class="products-<?= /* @noEscape */ $mode ?> <?= /* @noEscape */ $mode ?>">
+            <ol class="product-items <?= /* @noEscape */ $type ?>">
+                <?php $iterator = 1; ?>
+                <?php foreach ($subcategories as $subcategory): ?>
+                    <?php
+                    $_category = $_categoryHelper->getCategoryById($subcategory->getId());
+                    if ($_category->getHideCategory()) {
+                        continue;
+                    }
+                    $_imgHtml = '';
+                    if ($_imgUrl = $_category->getImageUrl()) {
+                        $_imgHtml = '<img src="' . /* @noEscape */  $_imgUrl . '" class="subcategory-image" />';
+                    }
+                    ?>
+                    <?= /* @escapeNotVerified */ ($iterator++ == 1) ? '<li class="product-item">' : '</li><li class="product-item">' ?>
+                        <div class="product-item-info">
+                            <a href="<?= /* @noEscape */ $block->escapeUrl($subcategory->getUrl()) ?>" 
+                               title="<?= /* @noEscape */ $block->escapeHtmlAttr($subcategory->getName()) ?>" 
+                               class="product-item-photo">
+                                <?= /* @noEscape */ $_imgHtml ?>
+                            </a> 
+                        </div>
+                        <div class="product-item-details">
+                            <strong class="product-item-name">
+                                <a href="<?= /* @noEscape */ $block->escapeUrl($subcategory->getUrl()) ?>" 
+                                   title="<?= /* @noEscape */ $block->escapeHtmlAttr($subcategory->getName()) ?>"
+                                   class="product-item-link">
+                                    <?= /* @noEscape */ $block->escapeHtml($subcategory->getName()) ?>
+                                </a>
+                            </strong>
+                            <br/>                       
+                            <div class="product-item-actions">
+                                <button class="action tocart primary"
+                                        data-mage-init='{"redirectUrl":{"url":"<?= $block->escapeUrl($subcategory->getUrl()) ?>"}}'>
+                                    <?= $block->escapeHtml(__('Shop Now')) ?>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                <?php endforeach; ?>
+            </ol>  
+        </div>
+    </div>
+</div>
