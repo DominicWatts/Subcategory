@@ -1,4 +1,4 @@
-# Xigen Magento 2 Subcategory page layout
+# Magento 2 Subcategory page layout
 
 ![phpcs](https://github.com/DominicWatts/Subcategory/workflows/phpcs/badge.svg)
 
